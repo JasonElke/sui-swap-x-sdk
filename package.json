@@ -1,5 +1,5 @@
 {
-  "name": "@interest-protocol/sui-sdk",
+  "name": "@sui-swap-x/sui-sdk",
   "version": "0.8.0",
   "files": [
     "dist",
@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/interest-protocol/sui-interest-sdk.git"
+    "url": "git+https://github.com/JasonElke/sui-swap-x-sdk.git"
   },
   "keywords": [
     "sui",
@@ -43,7 +43,7 @@
   "author": "jose cerqueira",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/interest-protocol/sui-interest-sdk/issues"
+    "url": "https://github.com/JasonElke/sui-swap-x-sdk/issues"
   },
   "homepage": "https://docs.interestprotocol.com/developers/sui/sdk",
   "devDependencies": {
