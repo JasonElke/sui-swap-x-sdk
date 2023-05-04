@@ -102,7 +102,7 @@ export class SDK {
     const objects = OBJECT_RECORD[this.chain];
 
     txb.moveCall({
-      target: `${objects.PACKAGE_ID}::interface::create_pool`,
+      target: `${objects.PACKAGE}::interface::create_pool`,
       arguments: [
         txb.object(objects.DEX_STORAGE_VOLATILE),
         txb.makeMoveVec({
@@ -165,7 +165,7 @@ export class SDK {
     // no hop swap
     if (!firstSwapObject.baseTokens.length) {
       txb.moveCall({
-        target: `${objects.PACKAGE_ID}::interface::${firstSwapObject.functionName}`,
+        target: `${objects.PACKAGE}::interface::${firstSwapObject.functionName}`,
         typeArguments: firstSwapObject.typeArgs,
         arguments: [
           txb.object(objects.DEX_STORAGE_VOLATILE),
@@ -186,7 +186,7 @@ export class SDK {
 
     // One Hop Swap
     txb.moveCall({
-      target: `${objects.PACKAGE_ID}::interface::${firstSwapObject.functionName}`,
+      target: `${objects.PACKAGE}::interface::${firstSwapObject.functionName}`,
       typeArguments: firstSwapObject.typeArgs,
       arguments: [
         txb.object(objects.DEX_STORAGE_VOLATILE),

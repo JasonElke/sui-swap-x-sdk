@@ -12,6 +12,8 @@ export const ZERO_ADDRESS =
 export const OBJECT_RECORD = {
   [SUI_DEV_NET_CHAIN]: {
     PACKAGE_ID:
+      '0x65765307ff14d78b166c7201e12f96b679ec455292ec9be89cb0c6265c69b364',
+    PACKAGE:
       '0xef3c058391346ba2dbb6f7687438d2f3012b4682892bd735d1f8b7a92eb184a0',
     VOLATILE_POOLS_OBJECT_ID:
       '0x48c4e19d094445185e94650f4a050251b04a025712ce693edd48f096bb1dee1d',
@@ -32,11 +34,11 @@ export const OBJECT_RECORD = {
     MASTER_CHEF_ACCOUNT_STORAGE: 
       '0x102446a05250c1e624595ad6165f94700b11f65962434bac1a8bc658938a8688',
     MASTER_CHEF_STORAGE:
-     '0x79f82a89b1cc96fcb8982316bfbc1a8658e191ad2aacf279e2d37d4f97a95b5e'
+      '0x79f82a89b1cc96fcb8982316bfbc1a8658e191ad2aacf279e2d37d4f97a95b5e'
   },
   [SUI_TEST_NET_CHAIN]: {
     PACKAGE_ID:
-      '0xef3c058391346ba2dbb6f7687438d2f3012b4682892bd735d1f8b7a92eb184a0',
+      '0x35fdd5170d77c76de3145374dc5e3b3814e2e19dd6b44cba8e1cb298b01ee23a',
     PACKAGE: 
       '0xef3c058391346ba2dbb6f7687438d2f3012b4682892bd735d1f8b7a92eb184a0',
     VOLATILE_POOLS_OBJECT_ID:
@@ -63,8 +65,7 @@ export const OBJECT_RECORD = {
 };
 
 export enum DexFunctions {
-  SwapX = 'swap_x',
-  SwapY = 'swap_y',
+  Swap = 'swap',
   OneHopSwap = 'one_hop_swap',
   TwoHopSwap = 'two_hop_swap',
 }

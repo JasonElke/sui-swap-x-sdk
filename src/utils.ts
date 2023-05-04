@@ -56,8 +56,7 @@ export const findMarket = ({
         baseTokens: [],
         coinInType,
         coinOutType,
-        functionName:
-          coinInType === coinXType ? DexFunctions.SwapX : DexFunctions.SwapY,
+        functionName:DexFunctions.Swap,
         typeArgs: [coinXType, coinYType],
       },
     ];
