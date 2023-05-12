@@ -1,4 +1,4 @@
-import { SUI_DEV_NET_CHAIN, SUI_TEST_NET_CHAIN } from './index';
+import { Network } from './index';
 
 const TEST_NET_POOLS = {
   '0x2::coin::Coin<0x35fdd5170d77c76de3145374dc5e3b3814e2e19dd6b44cba8e1cb298b01ee23a::coins::USDC>':
@@ -280,7 +280,8 @@ const DEV_NET_POOLS = {
         '0x36b6a6edc36748eaf201fc5dade3e845ce1c4c56d4e23861360b5a57e5d51307::core::Pool<0x36b6a6edc36748eaf201fc5dade3e845ce1c4c56d4e23861360b5a57e5d51307::curve::Volatile, 0x3821e4ae13d37a1c55a03a86eab613450c1302e6b4df461e1c79bdf8381dde47::iusdt::IUSDT, 0x36b6a6edc36748eaf201fc5dade3e845ce1c4c56d4e23861360b5a57e5d51307::ipx::IPX>'  
     },
 };
+
 export const POOLS = {
-  [SUI_DEV_NET_CHAIN]: DEV_NET_POOLS,
-  [SUI_TEST_NET_CHAIN]: TEST_NET_POOLS,
+  [Network.TESTNET]: DEV_NET_POOLS,
+  [Network.DEVNET]: TEST_NET_POOLS,
 };
