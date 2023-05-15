@@ -406,5 +406,4 @@ const MAIN_NET_POOLS = {
 export const POOLS = {
   [Network.TESTNET]: TEST_NET_POOLS,
   [Network.DEVNET]: DEV_NET_POOLS,
-  [Network.MAINNET]: MAIN_NET_POOLS,
 };
