@@ -82,7 +82,7 @@ export const MAINNET_BASE_COINS = {
 
 export const COIN_TYPE = {
   [Network.DEVNET]: {
-    ...TESTNET_NET_BASE_COINS,
+    ...DEV_NET_BASE_COINS,
     V_LP_SUI_ETH: `${
       OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
     }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
