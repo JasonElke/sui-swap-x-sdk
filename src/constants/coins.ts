@@ -166,7 +166,7 @@ export const COIN_TYPE = {
     }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
       TESTNET_NET_BASE_COINS.IPX
     }, ${TESTNET_NET_BASE_COINS.ETH}>`,
-    V_LP_UI_IPX: `${
+    V_LP_SUI_IPX: `${
       OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
     }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
       TESTNET_NET_BASE_COINS.SUI
