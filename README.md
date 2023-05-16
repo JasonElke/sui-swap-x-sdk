@@ -1,7 +1,5 @@
 # [SuiSwapX Sui SDK]
 
- <p> <img width="75px"height="75px" src="./assets/logo.png" /></p>
-
 ## Functionality
 
 - swap
