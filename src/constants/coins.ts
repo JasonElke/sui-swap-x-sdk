@@ -82,42 +82,57 @@ export const MAINNET_BASE_COINS = {
 
 export const COIN_TYPE = {
   [Network.DEVNET]: {
-    ...DEV_NET_BASE_COINS,
+    ...TESTNET_NET_BASE_COINS,
     V_LP_SUI_ETH: `${
-      OBJECT_RECORD[Network.DEVNET].DEX_PACKAGE_ID
-    }::core::LPCoin<${VOLATILE[Network.DEVNET]}, ${DEV_NET_BASE_COINS.SUI}, ${
-      DEV_NET_BASE_COINS.ETH
-    }>`,
+      OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
+    }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
+      TESTNET_NET_BASE_COINS.SUI
+    }, ${TESTNET_NET_BASE_COINS.ETH}>`,
     V_LP_BTC_ETH: `${
-      OBJECT_RECORD[Network.DEVNET].DEX_PACKAGE_ID
-    }::core::LPCoin<${VOLATILE[Network.DEVNET]}, ${DEV_NET_BASE_COINS.BTC}, ${
-      DEV_NET_BASE_COINS.ETH
-    }>`,
+      OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
+    }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
+      TESTNET_NET_BASE_COINS.BTC
+    }, ${TESTNET_NET_BASE_COINS.ETH}>`,
     V_LP_BNB_ETH: `${
-      OBJECT_RECORD[Network.DEVNET].DEX_PACKAGE_ID
-    }::core::LPCoin<${VOLATILE[Network.DEVNET]}, ${DEV_NET_BASE_COINS.BNB}, ${
-      DEV_NET_BASE_COINS.ETH
-    }>`,
+      OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
+    }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
+      TESTNET_NET_BASE_COINS.BNB
+    }, ${TESTNET_NET_BASE_COINS.ETH}>`,
     V_LP_ETH_USDT: `${
-      OBJECT_RECORD[Network.DEVNET].DEX_PACKAGE_ID
-    }::core::LPCoin<${VOLATILE[Network.DEVNET]}, ${DEV_NET_BASE_COINS.ETH}, ${
-      DEV_NET_BASE_COINS.USDT
-    }>`,
+      OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
+    }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
+      TESTNET_NET_BASE_COINS.ETH
+    }, ${TESTNET_NET_BASE_COINS.USDT}>`,
     V_LP_ETH_USDC: `${
-      OBJECT_RECORD[Network.DEVNET].DEX_PACKAGE_ID
-    }::core::LPCoin<${VOLATILE[Network.DEVNET]}, ${DEV_NET_BASE_COINS.ETH}, ${
-      DEV_NET_BASE_COINS.USDC
-    }>`,
+      OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
+    }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
+      TESTNET_NET_BASE_COINS.ETH
+    }, ${TESTNET_NET_BASE_COINS.USDC}>`,
     V_LP_ETH_IPX: `${
-      OBJECT_RECORD[Network.DEVNET].DEX_PACKAGE_ID
-    }::core::LPCoin<${VOLATILE[Network.DEVNET]}, ${DEV_NET_BASE_COINS.ETH}, ${
-      DEV_NET_BASE_COINS.IPX
-    }>`,
+      OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
+    }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
+      TESTNET_NET_BASE_COINS.IPX
+    }, ${TESTNET_NET_BASE_COINS.ETH}>`,
+    V_LP_UI_IPX: `${
+      OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
+    }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
+      TESTNET_NET_BASE_COINS.SUI
+    }, ${TESTNET_NET_BASE_COINS.IPX}>`,
+    V_LP_IPX_USDT: `${
+      OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
+    }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
+      TESTNET_NET_BASE_COINS.IPX
+    }, ${TESTNET_NET_BASE_COINS.USDT}>`,
+    V_LP_IPX_USDC: `${
+      OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
+    }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
+      TESTNET_NET_BASE_COINS.IPX
+    }, ${TESTNET_NET_BASE_COINS.USDC}>`,
     S_LP_USDC_USDT: `${
-      OBJECT_RECORD[Network.DEVNET].DEX_PACKAGE_ID
-    }::core::LPCoin<${STABLE[Network.DEVNET]}, ${DEV_NET_BASE_COINS.USDC}, ${
-      DEV_NET_BASE_COINS.USDT
-    }>`,
+      OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
+    }::core::LPCoin<${STABLE[Network.TESTNET]}, ${
+      TESTNET_NET_BASE_COINS.USDC
+    }, ${TESTNET_NET_BASE_COINS.USDT}>`,
   },
   [Network.TESTNET]: {
     ...TESTNET_NET_BASE_COINS,
@@ -151,6 +166,21 @@ export const COIN_TYPE = {
     }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
       TESTNET_NET_BASE_COINS.IPX
     }, ${TESTNET_NET_BASE_COINS.ETH}>`,
+    V_LP_UI_IPX: `${
+      OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
+    }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
+      TESTNET_NET_BASE_COINS.SUI
+    }, ${TESTNET_NET_BASE_COINS.IPX}>`,
+    V_LP_IPX_USDT: `${
+      OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
+    }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
+      TESTNET_NET_BASE_COINS.IPX
+    }, ${TESTNET_NET_BASE_COINS.USDT}>`,
+    V_LP_IPX_USDC: `${
+      OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
+    }::core::LPCoin<${VOLATILE[Network.TESTNET]}, ${
+      TESTNET_NET_BASE_COINS.IPX
+    }, ${TESTNET_NET_BASE_COINS.USDC}>`,
     S_LP_USDC_USDT: `${
       OBJECT_RECORD[Network.TESTNET].DEX_PACKAGE_ID
     }::core::LPCoin<${STABLE[Network.TESTNET]}, ${
